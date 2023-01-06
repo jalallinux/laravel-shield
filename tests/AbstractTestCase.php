@@ -3,7 +3,7 @@
 namespace JalalLinuX\Shield\Tests;
 
 use JalalLinuX\Shield\ShieldServiceProvider;
-use Monolog\Test\TestCase;
+use PHPUnit\Framework\TestCase;
 
 abstract class AbstractTestCase extends TestCase
 {
