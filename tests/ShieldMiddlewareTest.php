@@ -3,9 +3,9 @@
 namespace JalalLinuX\Shield\Tests;
 
 use Illuminate\Http\Request;
-use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 use JalalLinuX\Shield\Shield;
 use JalalLinuX\Shield\ShieldMiddleware;
+use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class ShieldMiddlewareTest extends AbstractTestCase
 {
