@@ -52,7 +52,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vinkla\\Shield\\ShieldServiceProvider"
+                "JalalLinuX\\Shield\\ShieldServiceProvider"
             ]
         }
     },
