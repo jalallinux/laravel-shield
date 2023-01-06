@@ -1,4 +1,4 @@
-# Laravel Shield
+# 🔑 Laravel Shield
 
 > A [HTTP basic auth](https://en.m.wikipedia.org/wiki/Basic_access_authentication) middleware for Laravel.
 
