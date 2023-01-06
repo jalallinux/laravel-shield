@@ -2,10 +2,10 @@
 
 namespace JalalLinuX\Shield\Tests;
 
-use ReflectionClass;
 use JalalLinuX\Shield\Shield;
+use ReflectionClass;
 
-class ShieldTest  extends AbstractTestCase
+class ShieldTest extends AbstractTestCase
 {
     public function testVerify()
     {
