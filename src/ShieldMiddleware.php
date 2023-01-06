@@ -8,13 +8,14 @@ use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class ShieldMiddleware
 {
-    public function __construct(protected Shield $shield) {
+    public function __construct(protected Shield $shield)
+    {
     }
 
     /**
-     * @param Request $request
-     * @param Closure $next
-     * @param string|null $user
+     * @param  Request  $request
+     * @param  Closure  $next
+     * @param  string|null  $user
      * @return mixed
      */
     public function handle($request, Closure $next, ?string $user = null): mixed
