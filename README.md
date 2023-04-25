@@ -39,7 +39,7 @@ Add the middleware to the `$routeMiddleware` array in your `Kernel.php` file.
 Laravel Shield requires configuration. To get started, you'll need to publish all vendor assets:
 
 ```bash
-$ php artisan vendor:publish --provider JalalLinuX\\Shield\\ShieldServiceProvider
+php artisan vendor:publish --provider JalalLinuX\\Shield\\ShieldServiceProvider
 ```
 
 This will create a `config/shield.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
@@ -73,7 +73,7 @@ $this->middleware('shield:jalallinux');
 To add a new user, you probably want to use hashed credentials. Hashed credentials can be generated with the [`password_hash()`](https://secure.php.net/manual/en/function.password-hash.php) function in the terminal:
 
 ```sh
-$ php -r "echo password_hash('my-secret-passphrase', PASSWORD_DEFAULT);"
+php -r "echo password_hash('my-secret-passphrase', PASSWORD_DEFAULT);"
 ```
 
 Then copy and paste the hashed credentials to the `.env` environment file.
