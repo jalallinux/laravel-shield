@@ -11,7 +11,7 @@ class Shield
     ) {
     }
 
-    public function verify(string|null $username, string|null $password, string|null $user = null): bool
+    public function verify(?string $username, ?string $password, ?string $user = null): bool
     {
         if ($username === null || $password === null) {
             return false;
@@ -33,7 +33,7 @@ class Shield
         return false;
     }
 
-    protected function getUsers(string $user = null): array
+    protected function getUsers(?string $user = null): array
     {
         if ($user !== null) {
             return array_intersect_key($this->users, array_flip((array) $user));

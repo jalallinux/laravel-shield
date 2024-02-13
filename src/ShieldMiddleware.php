@@ -4,7 +4,6 @@ namespace JalalLinuX\Shield;
 
 use Closure;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class ShieldMiddleware
 {
@@ -14,9 +13,6 @@ class ShieldMiddleware
 
     /**
      * @param  Request  $request
-     * @param  Closure  $next
-     * @param  string|null  $user
-     * @return mixed
      */
     public function handle($request, Closure $next, ?string $user = null): mixed
     {
