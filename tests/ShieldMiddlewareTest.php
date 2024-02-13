@@ -2,10 +2,10 @@
 
 namespace JalalLinuX\Shield\Tests;
 
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Http\Request;
 use JalalLinuX\Shield\Shield;
 use JalalLinuX\Shield\ShieldMiddleware;
-use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class ShieldMiddlewareTest extends AbstractTestCase
 {
@@ -31,7 +31,7 @@ class ShieldMiddlewareTest extends AbstractTestCase
 
     public function testInvalidShieldCredentialsException()
     {
-        $this->expectException(UnauthorizedHttpException::class);
+        $this->expectException(BindingResolutionException::class);
 
         $request = $this->getRequest('user3', 'password3');
         $middleware = $this->getMiddleware();
@@ -42,7 +42,7 @@ class ShieldMiddlewareTest extends AbstractTestCase
 
     public function testInvalidShieldCredentialsExceptionWithUser()
     {
-        $this->expectException(UnauthorizedHttpException::class);
+        $this->expectException(BindingResolutionException::class);
 
         $request = $this->getRequest('user1', 'password1');
         $middleware = $this->getMiddleware();
