@@ -12,6 +12,8 @@ return [
     |
     */
 
+    'exception' => new \Illuminate\Auth\AuthenticationException('Basic Authentication Error.'),
+
     'users' => [
         'default' => [
             env('SHIELD_USER'),
