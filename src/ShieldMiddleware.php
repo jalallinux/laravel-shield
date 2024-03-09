@@ -17,7 +17,7 @@ class ShieldMiddleware
     public function handle($request, Closure $next, ?string $user = null): mixed
     {
         if ($this->shield->verify($request->getUser(), $request->getPassword(), $user) === false) {
-            throw config('shield.exception');
+            throw new config('shield.exception');
         }
 
         return $next($request);
