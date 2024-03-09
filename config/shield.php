@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'exception' => new \Illuminate\Auth\AuthenticationException('Basic Authentication Error.'),
+    'exception' => \Illuminate\Auth\AuthenticationException::class,
 
     'users' => [
         'default' => [
