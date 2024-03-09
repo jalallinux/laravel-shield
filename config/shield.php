@@ -12,8 +12,6 @@ return [
     |
     */
 
-    'exception' => \Illuminate\Auth\AuthenticationException::class,
-
     'users' => [
         'default' => [
             env('SHIELD_USER'),
